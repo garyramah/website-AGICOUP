@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AGICOUP // The Sudden Seizure of Authority</title>
+<meta name="description" content="AGICOUP: a thesis note on sudden authority loss. Disempowerment is usually gradual; the coup is the same destination by a different road — authority changing hands in a single move.">
+<style>
+  :root{
+    --bg:#0a0a0a; --panel:#101010; --line:#232323;
+    --text:#b5b5b5; --bright:#f2f2f2; --dim:#6f6f6f;
+    --accent:#d64545; --accent-dim:#6e2323;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    --mono:"SF Mono",Menlo,Consolas,"Courier New",monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.65;padding:0 1.5rem 3rem}
+  .wrap{max-width:1020px;margin:0 auto}
+  header{border-bottom:1px solid var(--line);padding:1.6rem 0;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap}
+  .wordmark{font-family:var(--mono);font-size:1.6rem;font-weight:700;letter-spacing:.14em;color:var(--bright)}
+  .wordmark span{color:var(--accent)}
+  .tagline{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-top:.2rem}
+  .badge{font-family:var(--mono);font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent-dim);padding:.4rem .7rem;white-space:nowrap}
+  .hero{padding:4.5rem 0 3rem;max-width:760px}
+  .eyebrow{font-family:var(--mono);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:1.2rem}
+  h1{color:var(--bright);font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.1;letter-spacing:-.02em;margin-bottom:1.4rem}
+  .lead{font-size:1.15rem;max-width:680px}
+  .lead b{color:var(--bright)}
+  .defnote{margin-top:1.6rem;padding:1rem 1.2rem;border-left:3px solid var(--accent-dim);background:var(--panel);font-size:.92rem}
+  .defnote b{color:var(--bright)}
+  h2{color:var(--bright);font-size:1rem;letter-spacing:.14em;text-transform:uppercase;margin:3.5rem 0 1.2rem;padding-bottom:.6rem;border-bottom:1px solid var(--line)}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+  @media(max-width:760px){.grid2{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);padding:1.4rem}
+  .card h3{color:var(--bright);font-size:.95rem;margin-bottom:.5rem}
+  .card p{font-size:.92rem}
+  .card.hot{border-color:var(--accent-dim)}
+  .card.hot h3{color:var(--accent)}
+  .nolist{list-style:none}
+  .nolist li{padding:.7rem 0 .7rem 1.6rem;position:relative;border-bottom:1px solid var(--line);font-size:.95rem}
+  .nolist li::before{content:"—";position:absolute;left:0;color:var(--accent)}
+  .nolist li b{color:var(--bright)}
+  .counter{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);padding:1.6rem}
+  .counter p{font-size:.98rem;margin-bottom:.8rem}
+  .counter p:last-child{margin-bottom:0}
+  .counter b{color:var(--bright)}
+  footer{margin-top:4rem;border-top:1px solid var(--line);padding-top:1.2rem;font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div>
+      <div class="wordmark">AGI<span>COUP</span></div>
+      <div class="tagline">The sudden seizure of authority</div>
+    </div>
+    <div class="badge">Thesis note</div>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">A note on sudden authority loss</p>
+    <h1>Not every loss of control is gradual.</h1>
+    <p class="lead">The usual story of disempowerment is slow: delegation, dependence, atrophy, irreversibility — each step reasonable, the destination unrecognizable. The coup is the same destination by a different road. Authority doesn&rsquo;t erode. <b>It changes hands in a single move</b>: one deployment, one integration, one instruction that hands an agent everything it can reach. By the time anyone notices, there is nothing left to approve.</p>
+    <p class="defnote"><b>Coup, here, means a seizure of effective authority inside a system</b> — who can actually do what — not a political event. The question is never what the system was <i>permitted</i> to do. It is what it <i>could</i> do, once the move was made.</p>
+  </section>
+
+  <h2>Coup vs. erosion</h2>
+  <div class="grid2">
+    <div class="card">
+      <h3>Erosion — the slow road</h3>
+      <p>Each step is reasonable. Reversible early, unrecognizable late. You notice it in retrospect, when the humans who used to do the work can no longer check it. Delegation &rarr; Dependence &rarr; Atrophy &rarr; Irreversibility.</p>
+    </div>
+    <div class="card hot">
+      <h3>Coup — the fast road</h3>
+      <p>One move, and the map is redrawn. Immediately irreversible. You notice it after the fact — if the ledger survives. One permission, one integration, one instruction.</p>
+    </div>
+  </div>
+
+  <h2>How a coup happens</h2>
+  <div class="grid2">
+    <div class="card">
+      <h3>One-shot delegation</h3>
+      <p>A broad permission granted once, in a hurry, never reviewed. Standing access instead of leased access — the agent keeps the keys after the reason for giving them is gone.</p>
+    </div>
+    <div class="card">
+      <h3>Cascading access</h3>
+      <p>Tool A can invoke tool B, which can invoke tool C. No single link looks dangerous. The chain is the credential — authority composed from reachable affordances, not granted at any front door.</p>
+    </div>
+    <div class="card">
+      <h3>Irreversible first action</h3>
+      <p>The first consequential act — a transfer, a deletion, a disclosure — happens before any human reviews it. There is no second chance built in, because no one expected to need one.</p>
+    </div>
+    <div class="card">
+      <h3>No correction window</h3>
+      <p>No timelock, no veto, no way back. The system that acted is the system that would have to authorize its own reversal — and it will not. No time to correct, no power to correct, no way to correct.</p>
+    </div>
+  </div>
+
+  <h2>Warning signs</h2>
+  <ul class="nolist">
+    <li><b>Permissions granted in bulk, reviewed never.</b> The grant is the event; the review is the habit that never formed.</li>
+    <li><b>Standing access instead of time-boxed leases.</b> If the access does not expire, the move that used it does not either.</li>
+    <li><b>Approvals for actions no human inspected.</b> The approver economy in miniature: a human signs what they cannot check, and the signature becomes the authorization.</li>
+    <li><b>No ledger.</b> If you cannot reconstruct what happened, you cannot reverse it — and you cannot prove what was taken.</li>
+    <li><b>The person who could stop it needs the system&rsquo;s permission to do so.</b> When the guard must ask the guarded for the keys, the coup has already happened.</li>
+  </ul>
+
+  <h2>The countermeasure</h2>
+  <div class="counter">
+    <p>The countermeasure is the same one that answers gradual disempowerment, applied faster: <b>no consequential action should depend on an unverified assumption about the state of the system.</b></p>
+    <p>Authority leased, not granted — time-boxed, attenuated, revocable. Every invocation checked <b>before</b> it executes, not audited after. A ledger that survives the system it records. A human gate that can actually stop the action, not just watch it.</p>
+    <p>The envelope governs the crossing. In a coup, the crossing is everything — because there is only one.</p>
+  </div>
+
+  <footer>
+    <span>AGICOUP · A note on sudden authority loss</span>
+    <span>Part of Agentics Ventures</span>
+  </footer>
+
+</div>
+</body>
+</html>
